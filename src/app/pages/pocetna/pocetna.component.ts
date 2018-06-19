@@ -14,7 +14,7 @@ export class PocetnaComponent  {
   public opis;
 
   constructor(private _http: Http) {
-    this._http.get("http://localhost/IT255-DZ10/index.php").subscribe(
+    this._http.get("http://localhost/IT255-DZ13/index.php").subscribe(
       data => {
         this.posts= JSON.parse(data["_body"]);
       }

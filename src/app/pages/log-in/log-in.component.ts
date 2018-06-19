@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     let headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
     
-    this._http.post('http://localhost:8080/IT255-DZ12/login.php', data, {headers:headers}).subscribe( data => {
+    this._http.post('http://localhost:8080/IT255-DZ13/login.php', data, {headers:headers}).subscribe( data => {
         let obj = JSON.parse(data["_body"]);
         localStorage.setItem('token', obj.token);
         this._router.navigate(['./']);

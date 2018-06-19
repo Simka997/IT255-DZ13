@@ -32,7 +32,7 @@ export class RegistracijaComponent implements OnInit {
     const headers = new Headers();
     headers.set('Content-Type', 'application/x-www-form-urlencoded');
   
-    this._http.post('http://localhost:8080/IT255-DZ12/registracija.php', data, {headers:headers}).subscribe( data => {
+    this._http.post('http://localhost:8080/IT255-DZ13/registracija.php', data, {headers:headers}).subscribe( data => {
         let obj = JSON.parse(data["_body"]);
         this._router.navigate(['registracija']);
         alert("Uspesno ste se registrovali");
